@@ -983,6 +983,7 @@ GameObject:
   - component: {fileID: 966620204}
   - component: {fileID: 966620205}
   - component: {fileID: 966620206}
+  - component: {fileID: 966620207}
   m_Layer: 0
   m_Name: 9-Sliced
   m_TagString: Untagged
@@ -1157,6 +1158,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayButtonPrefab: {fileID: 2037886682}
+--- !u!114 &966620207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966620199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b83a66e994c052a4690c24673cb94997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 937988513}
+  - {fileID: 1152889776}
+  - {fileID: 1299679338}
+  - {fileID: 1476081417}
+  targetObject: {fileID: 966620199}
+  targetButton: {fileID: 2037886682}
 --- !u!1 &1101559316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,6 +2599,8 @@ GameObject:
   - component: {fileID: 2037886684}
   - component: {fileID: 2037886683}
   - component: {fileID: 2037886682}
+  - component: {fileID: 2037886685}
+  - component: {fileID: 2037886686}
   m_Layer: 5
   m_Name: WaitButton
   m_TagString: Untagged
@@ -2700,6 +2722,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037886680}
   m_CullTransparentMesh: 1
+--- !u!114 &2037886685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037886680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8649b88861c795469c76cc4edc9727d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetButton: {fileID: 2037886682}
+  targetText: {fileID: 133829069}
+--- !u!114 &2037886686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037886680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd779ee1fbfbd946a009e8f193bdd1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
