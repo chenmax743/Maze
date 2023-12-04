@@ -3,13 +3,13 @@ using UnityEngine.UI;
 
 public class ChangeColorToggle : MonoBehaviour
 {
-    public Color newColor = Color.red; // ·sªºÃC¦â
-    private Renderer objectRenderer; // ª«¥óªº´è¬V¾¹
-    private bool colorChanged = false; // ÃC¦â¬O§_¤w§ó§ïªº¼Ğ°O
+    public Color newColor = Color.red; // æ–°çš„é¡è‰²
+    private Renderer objectRenderer; // ç‰©ä»¶çš„æ¸²æŸ“å™¨
+    private bool colorChanged = false; // é¡è‰²æ˜¯å¦å·²æ›´æ”¹çš„æ¨™è¨˜
 
     void Start()
     {
-        objectRenderer = GetComponent<Renderer>(); // ¨ú±oª«¥óªº´è¬V¾¹²Õ¥ó
+        objectRenderer = GetComponent<Renderer>(); // å–å¾—ç‰©ä»¶çš„æ¸²æŸ“å™¨çµ„ä»¶
     }
 
     public void ToggleObjectColor()
@@ -20,8 +20,8 @@ public class ChangeColorToggle : MonoBehaviour
             return;
         }
 
-        objectRenderer.material.color = colorChanged ? Color.white : newColor; // ¤Á´«ÃC¦â
+        objectRenderer.material.color = colorChanged ? Color.white : newColor; // åˆ‡æ›é¡è‰²
 
-        colorChanged = !colorChanged; // ¤Á´«ÃC¦âª¬ºA
+        colorChanged = !colorChanged; // åˆ‡æ›é¡è‰²ç‹€æ…‹
     }
 }
