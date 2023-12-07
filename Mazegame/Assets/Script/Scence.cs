@@ -2,18 +2,20 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Scence: MonoBehaviour
+public class SceneSwitcher : MonoBehaviour
 {
-    public Button switchButton; // ¤Á´«³õ´ºªº«ö¶s
-    public string sceneToLoad; // ­n¤Á´«¨ìªº³õ´º¦WºÙ
+    public Button switchButton; // åˆ‡æ›å ´æ™¯çš„æŒ‰éˆ•
+    public string sceneToLoad; // è¦åŠ è¼‰çš„ç›®æ¨™å ´æ™¯åç¨±
 
     void Start()
     {
+        // åœ¨é–‹å§‹æ™‚ï¼Œç¶å®šæŒ‰éˆ•é»æ“Šäº‹ä»¶åˆ° SwitchScene æ–¹æ³•
         switchButton.onClick.AddListener(SwitchScene);
     }
 
     void SwitchScene()
     {
+        // èª¿ç”¨ SceneManager.LoadScene æ–¹æ³•ä»¥åŠ è¼‰æŒ‡å®šçš„å ´æ™¯
         SceneManager.LoadScene(sceneToLoad);
     }
 }
